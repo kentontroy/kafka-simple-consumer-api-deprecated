@@ -1,29 +1,29 @@
-# This GetOffsetShell Docker image uses the older Simple Consumer APIs written in Scala.
-# Support added for SASL.
-# Support added viewing offsets by specifying multiple topic names.
-# Support added viewing offsets by specifying a regex expressions for the topics desired.
-# WARNING: uses deprecated features that are not supported as part of the core branch.
-# Addresses KIPs ==> Kafka-3355 and Kafka-5235
+This GetOffsetShell Docker image uses the older Simple Consumer APIs written in Scala.
+Support added for SASL.
+Support added viewing offsets by specifying multiple topic names.
+Support added viewing offsets by specifying a regex expressions for the topics desired.
+WARNING: uses deprecated features that are not supported as part of the core branch.
+Addresses KIPs ==> Kafka-3355 and Kafka-5235
 
-# Github clone or manual download then
+Github clone or manual download then
 $ cd docker
-# Create the Dockerfile on your local host
+Create the Dockerfile on your local host
 $ ./Dockerfile.sh
 
-# The image exposes a working directory structure as:
-# /usr/local/src/offsetshell/
-# /usr/local/src/offsetshell/bin
-# /usr/local/src/offsetshell/depends
+The image exposes a working directory structure as:
+/usr/local/src/offsetshell/
+/usr/local/src/offsetshell/bin
+/usr/local/src/offsetshell/depends
 
-# Build the image
+Build the image
 $ docker build -t offsetshell:latest .
 
-# Run the image specifying the Kafka bootstrap URL and port in your environment
+Run the image specifying the Kafka bootstrap URL and port in your environment
 $ docker run --env BOOTSTRAP_SERVER=192.168.1.230:9093 --network=host -it offsetshell:latest /bin/bash
 
-# nano is installed in the image to support vi editing
-# Change the GetOffsetShell.sh script to reflect however you want to run it, per below.
-# An example JAAS file called sasl.properties is provided.
+nano is installed in the image to support vi editing
+Change the GetOffsetShell.sh script to reflect however you want to run it, per below.
+An example JAAS file called sasl.properties is provided.
 
 docker-container@12:20:51:$ ./GetOffsetShell.sh
 Example usage:
