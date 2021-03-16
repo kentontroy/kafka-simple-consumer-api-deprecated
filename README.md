@@ -13,29 +13,35 @@ Addresses KIPs ==> Kafka-3355 and Kafka-5235 <br>
 
 Create the Dockerfile on your local host <br>
 ```
-cd docker <br><br>
+cd docker 
 ./Dockerfile.sh
 ```
 
 Build the image<br>
+```
 docker build -t offsetshell:latest .<br>
+```
 
 The image exposes a working directory structure as: <br>
 ```
-/usr/local/src/offsetshell/ <br>
-/usr/local/src/offsetshell/bin <br>
-/usr/local/src/offsetshell/depends <br>
+/usr/local/src/offsetshell/ 
+/usr/local/src/offsetshell/bin 
+/usr/local/src/offsetshell/depends
 ```
 
 Run the image specifying the Kafka bootstrap URL and port in your environment <br>
-docker run --env BOOTSTRAP_SERVER=192.168.1.230:9093 --network=host -it offsetshell:latest /bin/bash <br>
+```
+docker run --env BOOTSTRAP_SERVER=192.168.1.230:9093 --network=host -it offsetshell:latest /bin/bash 
+```
 
 nano is installed in the image to support vi editing <br>
 Change the GetOffsetShell.sh script to reflect however you want to run it, per below <br>
 An example JAAS file called sasl.properties is provided. <br>
 
-docker-container@12:20:51:$ ./GetOffsetShell.sh <br>
-Example usage: <br>
+```
+docker-container@12:20:51:$ ./GetOffsetShell.sh 
+Example usage: 
+```
 
 java -cp ${LIBS} kafka.tools.GetOffsetShell <br>
                       --properties <JAAS security configuration> <br>
