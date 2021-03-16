@@ -1,7 +1,7 @@
 ## This GetOffsetShell Docker image uses the older Simple Consumer APIs written in Scala <br>
-**A previous customer wanted to reuse that older API but with added support for SASL_PLAIN authentication <br>
-**and with more functinality for regex topic name matching. The customer could not adjust their existing Spring <br>
-**Framework to take advantage of the newer Kafka Consumer Group APIs <br>
+**A previous customer wanted to reuse that older API but with added support for SASL_PLAIN authentication** <br>
+**and with more functinality for regex topic name matching. The customer could not adjust their existing Spring** <br>
+**Framework to take advantage of the newer Kafka Consumer Group APIs** <br>
 
 The Github repo only provides a Docker image from pre-built Scala binaries. It does not enable you to <br>
 rebuild the source code. The source code is zipped and provided as a reference <br>
