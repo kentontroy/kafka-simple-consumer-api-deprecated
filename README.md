@@ -3,11 +3,12 @@
 **and with more functinality for regex topic name matching. The customer could not adjust their existing Spring** <br>
 **Framework to take advantage of the newer Kafka Consumer Group APIs** <br>
 
-The Github repo only provides a Docker image from pre-built Scala binaries. It does not enable you to <br>
-rebuild the source code. The source code is zipped and provided as a reference <br>
-Support added for SASL <br>
-Support added viewing offsets by specifying multiple topic names <br>
-Support added viewing offsets by specifying a regex expressions for the topics desired <br>
+**The Github repo only provides a Docker image from pre-built Scala binaries. It does not enable you to** <br>
+**rebuild the source code. The source code is zipped and provided as a reference** <br>
+-Support added for SASL <br>
+-Support added viewing offsets by specifying multiple topic names <br>
+-Support added viewing offsets by specifying a regex expressions for the topics desired <br>
+
 WARNING: uses deprecated features that are not supported as part of the core branch <br>
 Addresses KIPs ==> Kafka-3355 and Kafka-5235 <br>
 
