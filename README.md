@@ -12,7 +12,7 @@ WARNING: uses deprecated features that are not supported as part of the core bra
 Addresses KIPs ==> Kafka-3355 and Kafka-5235 <br>
 
 Github clone or manual download then <br>
-cd docker <br>
+cd docker <br><br>
 Create the Dockerfile on your local host <br>
 ./Dockerfile.sh
 
