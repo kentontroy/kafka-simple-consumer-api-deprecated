@@ -58,28 +58,28 @@ java -cp ${LIBS} kafka.tools.GetOffsetShell
                       --time <offset timestamp> 
                       --topic-regex <regular expression> 
                       --zookeeper <zookeepr url with port> 
-```
 
-An interactive shell for getting consumer offsets. <br>
-Option                                 Description  <br>                      
-------                                 -----------  <br>                      
---broker-list <String: hostname:       REQUIRED: The list of hostname and     <br>
-  port,...,hostname:port>                port of the server to connect to.    <br>
---help <String: help>                  OPTIONAL: view usage information and   <br>
-                                         examples                             <br>
---partitions <String: partition ids>   OPTIONAL: comma separated list of      <br>
-                                         partition ids. If not specified, it  <br>
-                                         will find offsets for all partitions <br>
-                                         (default: )                          <br>
---properties <String: command config   OPTIONAL: Property file containing     <br>
-  property file>                         configs to be passed to Admin Client.<br>
---time <Long: timestamp/-1(latest)/-2  REQUIRED: timestamp of the offsets     <br>
-  (earliest)>                            before that                          <br>
---topic <String: topic>                REQUIRED if not using --topic-regex    <br>
-                                         Specify one-to-many topics in a      <br>
-                                         comma-delimited list to get offsets  <br>
-                                         from.                                <br>
---topic-regex <String: Regular         REQUIRED if not using --topic Regular  <br>
-  Expression>                            expression for topic filtering       <br>
---zookeeper <String: Zookeeper URL>    REQUIRED if using --topic-regex        <br>
-                                         Zookeeper URL                        <br>
+An interactive shell for getting consumer offsets. 
+Option                                 Description 
+------                                 ----------- 
+--broker-list <String: hostname:       REQUIRED: The list of hostname and    
+  port,...,hostname:port>                port of the server to connect to.   
+--help <String: help>                  OPTIONAL: view usage information and  
+                                         examples                            
+--partitions <String: partition ids>   OPTIONAL: comma separated list of     
+                                         partition ids. If not specified, it 
+                                         will find offsets for all partitions
+                                         (default: )                         
+--properties <String: command config   OPTIONAL: Property file containing    
+  property file>                         configs to be passed to Admin Client.
+--time <Long: timestamp/-1(latest)/-2  REQUIRED: timestamp of the offsets     
+  (earliest)>                            before that                          
+--topic <String: topic>                REQUIRED if not using --topic-regex    
+                                         Specify one-to-many topics in a      
+                                         comma-delimited list to get offsets  
+                                         from.                                
+--topic-regex <String: Regular         REQUIRED if not using --topic Regular  
+  Expression>                            expression for topic filtering       
+--zookeeper <String: Zookeeper URL>    REQUIRED if using --topic-regex        
+                                         Zookeeper URL                        
+```
