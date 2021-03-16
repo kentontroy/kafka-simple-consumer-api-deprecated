@@ -41,24 +41,24 @@ An example JAAS file called sasl.properties is provided. <br>
 ```
 docker-container@12:20:51:$ ./GetOffsetShell.sh 
 Example usage: 
-```
 
-java -cp ${LIBS} kafka.tools.GetOffsetShell <br>
-                      --properties <JAAS security configuration> <br>
-                      --broker-list <bootstrap servers with ports> <br>
-                      --time <offset timestamp> <br>
-                      --topic topic1 <br>
-java -cp ${LIBS} kafka.tools.GetOffsetShell <br>
-                      --properties <JAAS security configuration> <br>
-                      --broker-list <bootstrap servers> <br>
-                      --time <offset timestamp> <br>
-                      --topic topic1,topic2,topic3,... <br>
-java -cp ${LIBS} kafka.tools.GetOffsetShell <br>
-                      --properties <JAAS security configuration> <br>
-                      --broker-list <bootstrap servers> <br>
-                      --time <offset timestamp> <br>
-                      --topic-regex <regular expression> <br>
-                      --zookeeper <zookeepr url with port> <br>
+java -cp ${LIBS} kafka.tools.GetOffsetShell 
+                      --properties <JAAS security configuration> 
+                      --broker-list <bootstrap servers with ports> 
+                      --time <offset timestamp> 
+                      --topic topic1 
+java -cp ${LIBS} kafka.tools.GetOffsetShell 
+                      --properties <JAAS security configuration> 
+                      --broker-list <bootstrap servers> 
+                      --time <offset timestamp> 
+                      --topic topic1,topic2,topic3,... 
+java -cp ${LIBS} kafka.tools.GetOffsetShell 
+                      --properties <JAAS security configuration> 
+                      --broker-list <bootstrap servers> 
+                      --time <offset timestamp> 
+                      --topic-regex <regular expression> 
+                      --zookeeper <zookeepr url with port> 
+```
 
 An interactive shell for getting consumer offsets. <br>
 Option                                 Description  <br>                      
