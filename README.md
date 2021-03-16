@@ -9,8 +9,8 @@
 - Support added viewing offsets by specifying multiple topic names <br>
 - Support added viewing offsets by specifying a regex expressions for the topics desired <br>
 
-WARNING: uses deprecated features that are not supported as part of the core branch <br>
-Addresses KIPs ==> Kafka-3355 and Kafka-5235 <br>
+**WARNING: uses deprecated features that are not supported as part of the core branch** <br>
+**Addresses KIPs ==> Kafka-3355 and Kafka-5235** <br>
 
 Create the Dockerfile on your local host <br>
 ```
