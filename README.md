@@ -11,18 +11,21 @@ Support added viewing offsets by specifying a regex expressions for the topics d
 WARNING: uses deprecated features that are not supported as part of the core branch <br>
 Addresses KIPs ==> Kafka-3355 and Kafka-5235 <br>
 
-Github clone or manual download then <br>
-cd docker <br><br>
 Create the Dockerfile on your local host <br>
+```
+cd docker <br><br>
 ./Dockerfile.sh
+```
 
 Build the image<br>
 docker build -t offsetshell:latest .<br>
 
 The image exposes a working directory structure as: <br>
+```
 /usr/local/src/offsetshell/ <br>
 /usr/local/src/offsetshell/bin <br>
 /usr/local/src/offsetshell/depends <br>
+```
 
 Run the image specifying the Kafka bootstrap URL and port in your environment <br>
 docker run --env BOOTSTRAP_SERVER=192.168.1.230:9093 --network=host -it offsetshell:latest /bin/bash <br>
